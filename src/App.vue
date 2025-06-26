@@ -5,16 +5,34 @@ import GameWrongLetters from './components/GameWrongLetters.vue'
 import GameWord from './components/GameWord.vue'
 import GamePopup from './components/GamePopup.vue'
 import GameNotification from './components/GameNotification.vue'
+import { computed, ref } from 'vue'
+
+const word = ref('василий')
+const letters = ref<string[]>([])
+const correctLetters = computed(() => letters.value.filter((el) => word.value.includes(el)))
+const wrongLetters = computed(() => letters.value.filter((el) => !word.value.includes(el)))
+
+window.addEventListener('keydown', ({ key }) => {
+  if (letters.value.includes(key)) return
+
+  if (/[а-яА-ЯёЁ]/.test(key)) {
+    letters.value.push(key.toLowerCase())
+  }
+})
 </script>
 <template>
   <div>
+    {{ word }}
+    {{ letters }}
+    {{ correctLetters }}
+    {{ wrongtLetters }}
     <GameHeader />
     <div class="game-container">
       <GameFigure />
-      <GameWrongLetters />
-      <GameWord />
+      <GameWrongLetters :wrong-letters="wrongLetters" />
+      <GameWord :word="word" :correct-letters="correctLetters" />
     </div>
-    <GamePopup />
+    <GamePopup v-if="false" />
     <GameNotification />
   </div>
 </template>
