@@ -1,8 +1,7 @@
 # 🎮 vue-game-viselica
 ## 📸 Screenshot
 
-![Game Screenshot](https://github.com/Kurbanou/vue-game-viselica/raw/gh-pages/assets/Screenshot.jpg)
-
+<img src="https://github.com/Kurbanou/vue-game-viselica/raw/gh-pages/assets/Screenshot.jpg" alt="Game Screenshot" width="600" />
 
 A simple hangman game built with Vue 3 and Vite.
 
