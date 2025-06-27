@@ -1,44 +1,55 @@
-# vue-game-viselica
+# 🎮 vue-game-viselica
 
-This template should help get you started developing with Vue 3 in Vite.
-- [https://kurbanou.github.io/RSSchool-1/coffee-house/pages/main](https://kurbanou.github.io/vue-game-viselica/)
+A simple hangman game built with Vue 3 and Vite.
 
-## Recommended IDE Setup
+🔗 **Live Demo:**  
+[https://kurbanou.github.io/vue-game-viselica/](https://kurbanou.github.io/vue-game-viselica/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Type Support for `.vue` Imports in TS
+## 🧰 Recommended IDE Setup
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- [Visual Studio Code](https://code.visualstudio.com/)
+- Extension: [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)  
+  _(⚠️ Vetur should be disabled)_
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 📦 Type Support for `.vue` in TypeScript
 
-## Project Setup
+TypeScript doesn't natively support type information for `.vue` imports.  
+To fix this:
+
+- Use `vue-tsc` instead of `tsc` for type checking
+- Install Volar for proper support in the editor
+
+More info: [Volar extension](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+---
+
+## ⚙️ Configuration
+
+See the [Vite Configuration Reference](https://vite.dev/config/) for details.
+
+---
+
+## 🚀 Project Setup
+
+### Install dependencies
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
+## 🚀 Project Setup
 
 ```sh
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+# Type-check, build, and minify for production
 npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+# Lint the code with ESLint
 npm run lint
-```
-
-
-
-
