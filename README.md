@@ -35,21 +35,23 @@ See the [Vite Configuration Reference](https://vite.dev/config/) for details.
 
 ## 🚀 Project Setup
 
-### Install dependencies
 
-```sh
-npm install
-## 🚀 Project Setup
-
-```sh
 # Install dependencies
+```sh
 npm install
+```
 
 # Start the development server
+```sh
 npm run dev
+```
 
 # Type-check, build, and minify for production
+```sh
 npm run build
+```
 
 # Lint the code with ESLint
+```sh
 npm run lint
+```
