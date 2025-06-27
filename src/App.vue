@@ -7,6 +7,11 @@ import GamePopup from './components/GamePopup.vue'
 import GameNotification from './components/GameNotification.vue'
 import { computed, ref, watch } from 'vue'
 import axios from 'axios'
+const restart = async () => {
+  await getRandomWord()
+  letters.value = []
+  popup.value?.close()
+}
 
 const word = ref('василий')
 const getRandomWord = async () => {
@@ -57,12 +62,6 @@ window.addEventListener('keydown', ({ key }) => {
     letters.value.push(key.toLowerCase())
   }
 })
-
-const restart = async () => {
-  await getRandomWord()
-  letters.value = []
-  popup.value?.close()
-}
 </script>
 <template>
   <div>
