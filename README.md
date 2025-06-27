@@ -1,6 +1,7 @@
 # vue-game-viselica
 
 This template should help get you started developing with Vue 3 in Vite.
+- [https://kurbanou.github.io/RSSchool-1/coffee-house/pages/main](https://kurbanou.github.io/vue-game-viselica/)
 
 ## Recommended IDE Setup
 
